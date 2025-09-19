@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Asistente de Investigación — Roberta Gomez</title>
+  <meta name="description" content="Servicios profesionales de asistente de investigación. Discreta. Confiable. Eficiente." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1220;
+      --panel:#161a2c;
+      --muted:#9aa3b2;
+      --text:#e6e8ef;
+      --accent:#4cc9f0;
+      --accent-2:#b5179e;
+      --ring: 0 0 0 3px color-mix(in oklab, var(--accent) 35%, transparent);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--text);
+      background:radial-gradient(1200px 800px at 85% -10%, #1f2442 0%, #101326 40%, #0b0e1d 100%), var(--bg);
+      line-height:1.6;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{
+      display:flex;align-items:center;justify-content:space-between;gap:16px;
+      padding:8px 0 24px;border-bottom:1px solid #252a42;
+      position:sticky;top:0;background:color-mix(in oklab, var(--bg) 85%, transparent);
+      backdrop-filter:saturate(120%) blur(8px);z-index:10
+    }
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+    .brand img.logo{height:36px;width:auto;filter:drop-shadow(0 6px 12px rgba(0,0,0,.45))}
+    .brand .title{font-weight:700;letter-spacing:.4px}
+    .cta{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:10px 16px;border-radius:12px;border:1px solid #2b3150; color:var(--text); text-decoration:none;
+      background:linear-gradient(180deg, #222844 0%, #1a1f38 100%);
+      box-shadow:0 10px 20px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.05);
+      transition:transform .15s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .cta:hover{transform:translateY(-1px);box-shadow:0 16px 32px rgba(0,0,0,.45), var(--ring)}
+
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;padding:42px 0}
+    .hero h1{font-size:clamp(28px, 5vw, 56px);line-height:1.05;margin:0 0 12px}
+    .hero p.lead{font-size:clamp(16px, 2.1vw, 20px);color:var(--muted);margin:0 0 20px}
+    .tags{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 26px}
+    .tag{font-size:12px;letter-spacing:.4px;text-transform:uppercase;color:#cbd3e6;background:#1a1f38;border:1px solid #2a3153;padding:8px 10px;border-radius:999px}
+
+    .card{background:linear-gradient(180deg, #171c33 0%, #131831 100%);border:1px solid #262c49;border-radius:20px;box-shadow:0 18px 40px rgba(0,0,0,.35);overflow:hidden}
+    .portrait{
+      aspect-ratio:4/5; width:100%; object-fit:cover; display:block;
+      filter:saturate(98%) contrast(102%); transform:scale(1.01);
+    }
+    .section{padding:10px 0 40px}
+    .grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:18px}
+    .feature{background:#151935;border:1px solid #262c49;border-radius:16px;padding:18px}
+    .feature h3{margin:0 0 8px;font-size:18px}
+    .muted{color:var(--muted)}
+
+    footer{border-top:1px solid #252a42;margin-top:40px;padding:20px 0 40px;color:var(--muted);font-size:14px}
+
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr;}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <a class="brand" href="#top" aria-label="Roberta Gomez – Asistente de Investigación">
+      <img src="img/signature.png" alt="Logotipo de la firma de Roberta Gomez" class="logo" />
+      <span class="title">Asistente de Investigación</span>
+    </a>
+    <a class="cta" href="#contact">Contacto</a>
+  </header>
+
+  <main id="top" class="container">
+    <section class="hero">
+      <div>
+        <h1>Apoyo discreto, minucioso y confiable para sus investigaciones</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus, nisl ac pellentesque pulvinar, eros mauris mattis arcu, vitae fermentum massa risus in ex. Integer et luctus neque. Proin nec nibh non ipsum gravida volutpat.</p>
+        <div class="tags">
+          <span class="tag">Búsqueda de casos</span>
+          <span class="tag">OSINT</span>
+          <span class="tag">Informes</span>
+          <span class="tag">Gestión de evidencias</span>
+        </div>
+        <a class="cta" href="#contact">Solicitar una consulta</a>
+      </div>
+      <div class="card">
+        <img class="portrait" src="img/roberta.png" alt="Retrato profesional" />
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid">
+        <div class="feature">
+          <h3>Precisión y confidencialidad</h3>
+          <p class="muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae iaculis arcu. Nam egestas feugiat metus, ac egestas arcu posuere eu.</p>
+        </div>
+        <div class="feature">
+          <h3>Flujos de trabajo optimizados</h3>
+          <p class="muted">Curabitur posuere, augue in eleifend maximus, augue nunc accumsan lacus, ac varius nibh ligula luctus magna. Maecenas sit amet risus nec velit.</p>
+        </div>
+        <div class="feature">
+          <h3>Informes accionables</h3>
+          <p class="muted">Praesent dapibus, purus ut luctus malesuada, nisl orci dictum lorem, vitae interdum metus velit sed dui. Donec at sapien eget risus.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section card" style="padding:22px">
+      <h2 style="margin:6px 0 10px">Contacto</h2>
+      <p class="muted" style="margin:0 0 14px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque imperdiet porta arcu, at sollicitudin ipsum ullamcorper quis.</p>
+      <form action="https://formspree.io/f/mwpejzbe" method="POST" class="contact" style="display:grid;gap:12px;grid-template-columns:1fr 1fr">
+        <label style="display:flex;flex-direction:column;gap:6px">Nombre
+          <input name="name" required placeholder="Jane Doe" style="padding:12px 14px;border-radius:12px;border:1px solid #2b3150;background:#10152d;color:var(--text)">
+        </label>
+        <label style="display:flex;flex-direction:column;gap:6px">Correo electrónico
+          <input type="email" name="email" required placeholder="jane@example.com" style="padding:12px 14px;border-radius:12px;border:1px solid #2b3150;background:#10152d;color:var(--text)">
+        </label>
+        <label style="display:flex;flex-direction:column;gap:6px;grid-column:1/-1">Mensaje
+          <textarea name="message" required rows="5" placeholder="¿Cómo puedo ayudarle?" style="padding:12px 14px;border-radius:12px;border:1px solid #2b3150;background:#10152d;color:var(--text);resize:vertical"></textarea>
+        </label>
+        <div style="grid-column:1/-1;display:flex;gap:12px;align-items:center;justify-content:flex-end">
+          <button type="submit" class="cta">Enviar mensaje</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div>© <span id="year"></span> Roberta Gomez — Asistente de Investigación</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
